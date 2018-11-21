@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="4" name="pytest" skips="0" tests="10" time="0.800"><testcase classname="pytests.test_index" file="pytests/test_index.py" line="9" name="test_greenville_population" time="0.0009059906005859375"></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="12" name="test_greenville_area" time="0.0006258487701416016"></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="15" name="test_city_keys" time="0.0022323131561279297"><failure message="AssertionError: assert dict_keys([&apos;A...&apos;Population&apos;]) == [&apos;Area&apos;, &apos;City... &apos;Population&apos;]
+  Use -v to get the full diff">def test_city_keys():
+&gt;       assert city_keys == [&apos;Area&apos;, &apos;City&apos;, &apos;Country&apos;, &apos;Population&apos;]
+E       AssertionError: assert dict_keys([&apos;A...&apos;Population&apos;]) == [&apos;Area&apos;, &apos;City... &apos;Population&apos;]
+E         Use -v to get the full diff
+
+pytests/test_index.py:17: AssertionError</failure></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="18" name="test_city_values" time="0.0010707378387451172"><failure message="AssertionError: assert dict_values([...&apos;USA&apos;, 84554]) == [68, &apos;Greenvil... &apos;USA&apos;, 84554]
+  Use -v to get the full diff">def test_city_values():
+&gt;       assert city_values == [68, &apos;Greenville&apos;, &apos;USA&apos;, 84554]
+E       AssertionError: assert dict_values([...&apos;USA&apos;, 84554]) == [68, &apos;Greenvil... &apos;USA&apos;, 84554]
+E         Use -v to get the full diff
+
+pytests/test_index.py:20: AssertionError</failure></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="21" name="test_salina" time="0.000591278076171875"></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="24" name="test_los_cabos_pop" time="0.000659942626953125"></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="27" name="test_city_count" time="0.0006933212280273438"></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="30" name="test_change_spelling" time="0.0005450248718261719"></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="33" name="test_pyeongchang_keys" time="0.0009853839874267578"><failure message="AssertionError: assert &lt;class &apos;NoneType&apos;&gt; == &lt;class &apos;list&apos;&gt;
+ +  where &lt;class &apos;NoneType&apos;&gt; = type(None)
+ +  and   &lt;class &apos;list&apos;&gt; = type([])
+ +    where [] = list()">def test_pyeongchang_keys():
+&gt;       assert type(pyeongchang_keys) == type(list())
+E       AssertionError: assert &lt;class &apos;NoneType&apos;&gt; == &lt;class &apos;list&apos;&gt;
+E        +  where &lt;class &apos;NoneType&apos;&gt; = type(None)
+E        +  and   &lt;class &apos;list&apos;&gt; = type([])
+E        +    where [] = list()
+
+pytests/test_index.py:35: AssertionError</failure></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="37" name="test_pyeongchang_values" time="0.0008089542388916016"><failure message="AssertionError: assert &lt;class &apos;dict&apos;&gt; == &lt;class &apos;list&apos;&gt;
+ +  where &lt;class &apos;dict&apos;&gt; = type({&apos;Area&apos;: 3194, &apos;City&apos;: &apos;PyeongChang&apos;, &apos;Country&apos;: &apos;South Korea&apos;, &apos;Population&apos;: 2581000})
+ +  and   &lt;class &apos;list&apos;&gt; = type([])
+ +    where [] = list()">def test_pyeongchang_values():
+&gt;       assert type(pyeongchang_values) == type(list())
+E       AssertionError: assert &lt;class &apos;dict&apos;&gt; == &lt;class &apos;list&apos;&gt;
+E        +  where &lt;class &apos;dict&apos;&gt; = type({&apos;Area&apos;: 3194, &apos;City&apos;: &apos;PyeongChang&apos;, &apos;Country&apos;: &apos;South Korea&apos;, &apos;Population&apos;: 2581000})
+E        +  and   &lt;class &apos;list&apos;&gt; = type([])
+E        +    where [] = list()
+
+pytests/test_index.py:39: AssertionError</failure></testcase></testsuite>
